@@ -1,0 +1,122 @@
+{
+  "name": "@rahul_dadhich15/number-conversion-kit",
+  "version": "0.1.0",
+  "description": "Production-ready, zero-runtime-dependency Number & Base Conversion kit for JavaScript and TypeScript",
+  "license": "MIT",
+  "author": "Rahul Dadhich",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahuldadhich1517-sys/number-conversion-kit"
+  },
+  "keywords": [
+    "number",
+    "base-conversion",
+    "binary",
+    "hexadecimal",
+    "octal",
+    "bigint",
+    "bitwise",
+    "ieee754",
+    "twos-complement",
+    "utf8"
+  ],
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./binary-to-decimal": {
+      "types": "./dist/binary-to-decimal/index.d.ts",
+      "import": "./dist/binary-to-decimal/index.js",
+      "require": "./dist/binary-to-decimal/index.cjs"
+    },
+    "./base-convert-all": {
+      "types": "./dist/base-convert-all/index.d.ts",
+      "import": "./dist/base-convert-all/index.js",
+      "require": "./dist/base-convert-all/index.cjs"
+    },
+    "./bitwise-calculate": {
+      "types": "./dist/bitwise-calculate/index.d.ts",
+      "import": "./dist/bitwise-calculate/index.js",
+      "require": "./dist/bitwise-calculate/index.cjs"
+    },
+    "./decimal-to-binary": {
+      "types": "./dist/decimal-to-binary/index.d.ts",
+      "import": "./dist/decimal-to-binary/index.js",
+      "require": "./dist/decimal-to-binary/index.cjs"
+    },
+    "./hex-to-binary": {
+      "types": "./dist/hex-to-binary/index.d.ts",
+      "import": "./dist/hex-to-binary/index.js",
+      "require": "./dist/hex-to-binary/index.cjs"
+    },
+    "./hex-to-decimal": {
+      "types": "./dist/hex-to-decimal/index.d.ts",
+      "import": "./dist/hex-to-decimal/index.js",
+      "require": "./dist/hex-to-decimal/index.cjs"
+    },
+    "./hex-to-text": {
+      "types": "./dist/hex-to-text/index.d.ts",
+      "import": "./dist/hex-to-text/index.js",
+      "require": "./dist/hex-to-text/index.cjs"
+    },
+    "./ieee754-convert": {
+      "types": "./dist/ieee754-convert/index.d.ts",
+      "import": "./dist/ieee754-convert/index.js",
+      "require": "./dist/ieee754-convert/index.cjs"
+    },
+    "./number-base-convert": {
+      "types": "./dist/number-base-convert/index.d.ts",
+      "import": "./dist/number-base-convert/index.js",
+      "require": "./dist/number-base-convert/index.cjs"
+    },
+    "./text-to-binary": {
+      "types": "./dist/text-to-binary/index.d.ts",
+      "import": "./dist/text-to-binary/index.js",
+      "require": "./dist/text-to-binary/index.cjs"
+    },
+    "./twos-complement": {
+      "types": "./dist/twos-complement/index.d.ts",
+      "import": "./dist/twos-complement/index.js",
+      "require": "./dist/twos-complement/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint \"src/**/*.ts\" \"tests/**/*.ts\"",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "test:consumer": "node scripts/test-consumer.mjs",
+    "pack:check": "npm pack --dry-run"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.11",
+    "@typescript-eslint/eslint-plugin": "^8.74.0",
+    "@typescript-eslint/parser": "^8.74.0",
+    "@vitest/coverage-v8": "^5.1.2",
+    "eslint": "^10.15.0",
+    "tsup": "^9.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.74.0",
+    "vitest": "^5.1.2"
+  }
+}
